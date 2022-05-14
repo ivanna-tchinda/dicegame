@@ -1,0 +1,54 @@
+body{
+    background-color: white;
+    padding: 10px;
+    
+}
+i{
+    color:aqua;
+}
+h2{
+    padding-left: 42%;
+    z-index: 2;
+    position: relative;
+}
+h1{
+    display: inline;
+    margin: 200px;
+    margin-left: 350px;
+    position: relative;
+    z-index: 2;
+}
+.players{
+    margin-top: 100px;
+    position: relative;
+    z-index: 2;
+}
+.background{
+    position: fixed;
+    width: 50%;
+    top: 0;
+    left: 0;
+    background-color: #ECEAEA;
+    height: 100%;
+    z-index: 1;
+}
+.border{
+    position: fixed;
+    z-index: 2;
+    border-style: solid;
+    border-width: 20px;
+    border-color: aqua;
+    height: 710px;
+    width: 1500px;
+    margin: -20px;
+}
+.dice{
+    position: relative;
+    z-index: 2;
+    margin-left: 679px;
+}
+.rollhold{
+    list-style: none;
+    position: relative;
+    z-index: 2;
+}
