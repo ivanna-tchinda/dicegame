@@ -47,8 +47,33 @@ h1{
     z-index: 2;
     margin-left: 679px;
 }
-.rollhold{
+.scores li{
     list-style: none;
     position: relative;
     z-index: 2;
+    display: inline-block;
+    margin: 0px;
+    font-size: 40px;
+    border-style: solid;
+    background-color: aquamarine;
+    width: 200px;
+    height: 150px;
+    margin: 260px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.rollhold li{
+    list-style: none;
+    position: relative;
+    z-index: 2;
+    margin-left: 660px;
+    font-size: 30px;
+    margin-top: 20px;
+    
+}
+
+li i{
+    margin: 0px;
 }
