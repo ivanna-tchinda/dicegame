@@ -1,29 +1,23 @@
-let dicemove = document.getElementsByClassName('dicemove').innerHTML;
-let roll = document.getElementById('roll');
+const dice = document.getElementById('roll');
+let score1 = 0;
 
-function changeDice(){
-    var num = num = Math.round(Math.random() * 5) + 1;
-    alert(num);
-    switch(num){
-        case 6:
-            dicemove.innerHTML += '<i class="fa fa-duotone fa-dice-six fa-10x"></i>';
-            break;
-        case 5:
-            dicemove.innerHTML += '<i class="fa fa-duotone fa-dice-five fa-10x"></i>';
-            break;
-        case 4:
-            dicemove.innerHTML += '<i class="fa fa-duotone fa-dice-four fa-10x"></i>';
-            break;
-        case 3:
-            dicemove.innerHTML += '<i class="fa fa-duotone fa-dice-three fa-10x"></i>';
-            break;
-        case 2:
-            dicemove.innerHTML += '<i class="fa fa-duotone fa-dice-two fa-10x"></i>';
-            break;
-        case 1:
-            dicemove.innerHTML += '<i class="fa fa-duotone fa-dice-one fa-10x"></i>';
-            break;
-}};
 
-roll.addEventListener('click', changeDice);
+
+
+function diceGame(){
+    //le dé change de face à chaque click sur roll
+    var randomDice = Math.floor((Math.random()*6) + 1);
+    var diceLocation = "D" + randomDice + ".png";
+    var display = document.querySelectorAll("img")[0];
+    display.setAttribute("src", diceLocation);
+
+    //on ajoute les points aux deux joueurs
+    score1 =+ randomDice;
+    document.getElementById('pointsPlayer1').innerHTML =+ score1;
+    return score1;
+    
+    
+}
+
+
 

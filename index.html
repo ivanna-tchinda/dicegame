@@ -20,20 +20,20 @@
         <h1>Player 2</h1>
 
     </div>
-    <div class="dicemove"><i class="fa fa-duotone fa-dice-five fa-10x"></i></div>
+    <div class="dicemove"><img src="D6.png"></div>
 
     <div class="scores">
 
-        <li class="scorePlayer1"><div>Current</div></li>
-        <li class="score2Player2"><div>Current</div></li>
+        <li class="scorePlayer1"><div>Current <div id = "pointsPlayer1" ></div></div></li>
+        <li class="scorePlayer2"><div>Current <div id = "pointsPlayer2" ></div></div></li>
 
     </div>
 
     <div class="rollhold">
-        <ul>
-            <li id="roll" onclick="changeDice()"><a href="#"><i class="fa-solid fa-arrows-rotate"></i>Roll Dice</a></li>
-            <li id="hold"><a href="#"><i class="fa-solid fa-pause"></i> Hold</a></li>
-        </ul>
+        
+            <button id="roll" onclick="diceGame()">Roll Dice</button>
+            <button id="hold"><a href="#"><i class="fa-solid fa-pause"></i> Hold</a></button>
+        
 
     </div>
 
@@ -42,6 +42,6 @@
 
 
 
-    <script href="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

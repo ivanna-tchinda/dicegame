@@ -64,7 +64,7 @@ h1{
     text-align: center;
 }
 
-.rollhold li{
+.rollhold button{
     list-style: none;
     position: relative;
     z-index: 2;
@@ -73,11 +73,14 @@ h1{
     margin-top: 20px;
     
 }
-.rollhold li a{
+.rollhold button:hover{
+    cursor: pointer;
+}
+.rollhold button a{
     text-decoration: none;
     color: inherit;
     cursor: pointer;
 }
-li i{
+button i{
     margin: 0px;
 }
