@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="border"></div>
-    <h2><i class="fa fa-thin fa-circle-plus"></i> New Game</h2>
+    <h2 onclick="newGame()"><i class="fa fa-thin fa-circle-plus"></i> New Game</h2>
 
     <div class="players">
 
@@ -24,15 +24,17 @@
 
     <div class="scores">
 
-        <li class="scorePlayer1"><div>Current <div id = "pointsPlayer1" ></div></div></li>
-        <li class="scorePlayer2"><div>Current <div id = "pointsPlayer2" ></div></div></li>
+        <li class="scorePlayer1"><div>Current <div id = "pointsPlayer1" ></div> Global <div id="globalPlayer1"></div></div></li>
+        <li class="scorePlayer2"><div>Current <div id = "pointsPlayer2" ></div> Global <div id="globalPlayer2"></div></div></li>
 
     </div>
+
+    <div class="text">Le joueur 1 commence!</div>
 
     <div class="rollhold">
         
             <button id="roll" onclick="diceGame()">Roll Dice</button>
-            <button id="hold"><a href="#"><i class="fa-solid fa-pause"></i> Hold</a></button>
+            <button id="hold" onclick="toGlobal()"> Hold</button>
         
 
     </div>
