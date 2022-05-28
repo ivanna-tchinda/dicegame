@@ -12,20 +12,28 @@
 </head>
 <body>
     <div class="border"></div>
-    <h2 onclick="newGame()"><i class="fa fa-thin fa-circle-plus"></i> New Game</h2>
+    <h2 class="newGame" onclick="newGame()"><i class="fa fa-thin fa-circle-plus"></i> New Game</h2>
 
     <div class="players">
 
-        <h1>Player 1</h1>
+        <h1>Player 1</h1> 
         <h1>Player 2</h1>
-
     </div>
-    <div class="dicemove"><img src="D6.png"></div>
+
+        <div class="scoreGlobal">
+        <div id="globalPlayer1"></div> <div class="dicemove"><img src="D6.png"></div> <div id="globalPlayer2"></div>
+        </div>
+    
+    
+    
 
     <div class="scores">
 
-        <li class="scorePlayer1"><div>Current <div id = "pointsPlayer1" ></div> Global <div id="globalPlayer1"></div></div></li>
-        <li class="scorePlayer2"><div>Current <div id = "pointsPlayer2" ></div> Global <div id="globalPlayer2"></div></div></li>
+        <li class="scorePlayer1"><div>Current <div id = "pointsPlayer1" ></div></div></li>
+
+
+        
+        <li class="scorePlayer2"><div>Current <div id = "pointsPlayer2" ></div></div></li>
 
     </div>
 

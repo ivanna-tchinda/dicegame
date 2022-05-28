@@ -6,10 +6,14 @@ let gloPoints1 = document.getElementById('globalPlayer1');
 let gloPoints2 = document.getElementById('globalPlayer2');
 
 let global1 = 0;
+gloPoints1.innerHTML = global1;
 let global2 = 0;
+gloPoints2.innerHTML = global2;
 
 let score1 = 0;
+pp1.innerHTML = score1;
 let score2 = 0;
+pp2.innerHTML = score2;
 
 let tour = 1;
 
@@ -48,8 +52,7 @@ function diceGame(){
                 pp1.innerHTML = score1;
                 affiche.innerHTML = " ";
             }
-            global1 += score1;
-            gloPoints1.innerHTML = global1;
+            
 
 
         }   
@@ -71,8 +74,7 @@ function diceGame(){
                 pp2.innerHTML = score2;
                 affiche.innerHTML = " ";
             }
-            global2 += score2;
-            gloPoints2.innerHTML = global2;
+            
         }
 
     }
@@ -88,24 +90,28 @@ function diceGame(){
     else{
         affiche.innerHTML = "Bravo, le joueur 2 a " + global2 + " points!";
         global1 = 0;
+        gloPoints1.innerHTML = global1;
         global2 = 0;
+        gloPoints2.innerHTML = global2;
         score1 = 0;
+        pp1.innerHTML = score1;
         score2 = 0;
+        pp2.innerHTML = score2
         tour = 1;
     }
 }
 
 function toGlobal(){
     if(tour == 1){
-        global1 = global1;
+        global1 += score1;
         gloPoints1.innerHTML = global1;
         score1 = 0;
-        pp1.innerHTML = score2;
+        pp1.innerHTML = score1;
         tour--;
         affiche.innerHTML = "Le joueur 1 garde son score, c'est au tour du joueur 2";
     }
     else{
-        global2 = global2;
+        global2 += score2;
         gloPoints2.innerHTML = global2;
         score2 = 0;
         pp2.innerHTML = score2;
