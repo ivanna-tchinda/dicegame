@@ -5,6 +5,7 @@ let affiche = document.getElementsByClassName('text')[0];
 let gloPoints1 = document.getElementById('globalPlayer1');
 let gloPoints2 = document.getElementById('globalPlayer2');
 
+
 let global1 = 0;
 gloPoints1.innerHTML = global1;
 let global2 = 0;
@@ -22,12 +23,14 @@ let tour = 1;
 
 
 
+
 function diceGame(){
     //le dé change de face à chaque click sur roll
     let randomDice = Math.floor((Math.random()*6) + 1);
     var diceLocation = "D" + randomDice + ".png";
     var display = document.querySelectorAll("img")[0];
     display.setAttribute("src", diceLocation);
+    
 
 
     //s'assurer que le score global est inferieur à 100
@@ -37,30 +40,38 @@ function diceGame(){
         //le joueur 1 joue
         if (tour == 1){
 
-
+            
+            
         //Premier cas: le joueur 1 appuie sur roll et tombe sur 1
             if(randomDice == 1){
+               
                 tour--;
                 score1 = 0;
                 pp1.innerHTML = score1;
                 affiche.innerHTML = "Tu as perdu ton tour! C'est au tour du joueur 2";
+
             }
         //Deuxième cas cas: le joueur 1 appuie sur roll et ne tombe pas sur 1
             else
             {
+                
                 score1 +=randomDice;
                 pp1.innerHTML = score1;
                 affiche.innerHTML = " ";
             }
             
 
-
+            
         }   
     
 
         else{
 
         //le joueur 2 joue
+       
+        
+        
+            
             if(randomDice == 1){
                 tour++;
                 score2 = 0;
@@ -74,11 +85,12 @@ function diceGame(){
                 pp2.innerHTML = score2;
                 affiche.innerHTML = " ";
             }
-            
+             
         }
 
     }
     else if(global1 >= 100){
+        
         affiche.innerHTML = "Bravo, le joueur 1 a " + global1 + " points!";
         global1 = 0;
         global2 = 0;
@@ -88,6 +100,7 @@ function diceGame(){
         
     }
     else{
+        
         affiche.innerHTML = "Bravo, le joueur 2 a " + global2 + " points!";
         global1 = 0;
         gloPoints1.innerHTML = global1;
@@ -98,6 +111,7 @@ function diceGame(){
         score2 = 0;
         pp2.innerHTML = score2
         tour = 1;
+        
     }
 }
 
@@ -131,6 +145,8 @@ function newGame(){
     gloPoints1.innerHTML = global1;
     global2 = 0;
     gloPoints2.innerHTML = global2;
+    
+    
 }
 
 

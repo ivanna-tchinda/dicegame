@@ -6,23 +6,25 @@ body{
 
     
 }
-i{
-    color:aqua;
+ion-icon{
+    color: rgba(255, 0, 0, 0.586);
+    font-size: 20px;
 }
 .newGame{
     padding-left: 42%;
     z-index: 2;
     position: relative;
+    font-weight: 400;
 }
 .newGame:hover{
     cursor: pointer;
 }
 
-.pointsPlayer1{
-    display: inline-block;
-}
-.pointsPlayer2{
-    display: inline;
+#pointsPlayer1, #pointsPlayer2{
+    color: white;
+    font-weight: 200;
+    font-size: 60px;
+    margin-top: 20px;
 }
 h1{
     display: inline;
@@ -31,6 +33,14 @@ h1{
     margin-right: 350px;
     position: relative;
     z-index: 2;
+}
+
+.secondPlayer{
+    color: rgba(128, 128, 128, 0.436);
+    font-weight: 400;
+}
+.firstPlayer{
+    font-weight: 400;
 }
 
 .scoreGlobal {
@@ -42,6 +52,7 @@ h1{
     margin-left: 50px;
     margin-top: 50px;
     margin-bottom: 200px;
+    color: rgba(255, 0, 0, 0.586);
 }
 .scoreGlobal #globalPlayer1{
     margin-left: 300px;
@@ -60,7 +71,7 @@ h1{
     position: relative;
     z-index: 2;
     display: inline;
-    margin-left: 100px;
+    margin-left: 120px;
 }
 .background{
     position: fixed;
@@ -76,7 +87,7 @@ h1{
     z-index: 2;
     border-style: solid;
     border-width: 20px;
-    border-color: aqua;
+    border-color :#AD7126;
     height: 710px;
     width: 1500px;
     margin: -20px;
@@ -94,8 +105,8 @@ h1{
     display: inline-block;
     margin: 0px;
     font-size: 30px;
-    border-style: solid;
-    background-color: aquamarine;
+    border-style: none;
+    background-color: rgba(255, 0, 0, 0.586);
     width: 200px;
     height: 150px;
     margin: 260px;
@@ -112,7 +123,7 @@ h1{
 }
 
 
-.rollhold button{
+.rollhold div{
     list-style: none;
     position: relative;
     z-index: 2;
@@ -121,15 +132,18 @@ h1{
     margin-top: 50px;
     
 }
-.rollhold button:hover{
+.rollhold div:hover{
     cursor: pointer;
 }
-.rollhold button a{
+.rollhold div a{
     text-decoration: none;
     color: inherit;
     cursor: pointer;
 }
-button i{
+div ion-icon{
+    font-size: 30px;
+}
+div i{
     margin: 0px;
 }
 

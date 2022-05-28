@@ -12,12 +12,12 @@
 </head>
 <body>
     <div class="border"></div>
-    <h2 class="newGame" onclick="newGame()"><i class="fa fa-thin fa-circle-plus"></i> New Game</h2>
+    <h2 class="newGame" onclick="newGame()"><ion-icon name="add-circle-outline"></ion-icon> NEW GAME</h2>
 
     <div class="players">
 
-        <h1>Player 1</h1> 
-        <h1>Player 2</h1>
+        <h1 class="firstPlayer">Player 1</h1> 
+        <h1 class="secondPlayer">Player 2</h1>
     </div>
 
         <div class="scoreGlobal">
@@ -41,8 +41,8 @@
 
     <div class="rollhold">
         
-            <button id="roll" onclick="diceGame()">Roll Dice</button>
-            <button id="hold" onclick="toGlobal()"> Hold</button>
+            <div id="roll" onclick="diceGame()"><ion-icon name="sync-outline"></ion-icon> Roll Dice</div>
+            <div id="hold" onclick="toGlobal()"><ion-icon name="download-outline"></ion-icon> Hold</div>
         
 
     </div>
@@ -53,5 +53,7 @@
 
 
     <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
