@@ -52,7 +52,7 @@ h1{
     margin-left: 50px;
     margin-top: 50px;
     margin-bottom: 200px;
-    color: blue;
+    color: rgba(255, 0, 0, 0.586);
 }
 .scoreGlobal #globalPlayer1{
     margin-left: 300px;
